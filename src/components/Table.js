@@ -27,6 +27,10 @@ const Table = () => {
         Header: "Language",
         accessor: "Language",
       },
+      {
+        Header: "QTY",
+        accessor: "Count",
+      },
     ],
     []
   );
@@ -41,7 +45,10 @@ const Table = () => {
 
   const filteredData = (ogData, term) => {
     const filtered = ogData.filter((card) => {
-      return card.Name.toLowerCase().includes(term.toLowerCase());
+      return (
+        card.Name.toLowerCase().includes(term.toLowerCase()) ||
+        card.Edition.toLowerCase().includes(term.toLowerCase())
+      );
     });
     console.log(filtered);
     setData(filtered);
