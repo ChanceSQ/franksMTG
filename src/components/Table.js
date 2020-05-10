@@ -101,8 +101,6 @@ const Table = () => {
                       {...cell.getCellProps()}
                       style={{
                         padding: "10px",
-                        border: "solid 1px gray",
-                        background: "aliceblue",
                       }}
                     >
                       {cell.render("Cell")}
