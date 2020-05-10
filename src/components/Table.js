@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useTable, useSortBy } from "react-table";
 
 const Table = () => {
-  // var data = require("../CardSphereFrank.json");
   const ogData = require("../CardSphereFrank.json");
   const [data, setData] = useState(require("../CardSphereFrank.json"));
 
@@ -69,7 +68,7 @@ const Table = () => {
                       ? column.isSortedDesc
                         ? " 🔽"
                         : " 🔼"
-                      : ""}
+                      : "↕️"}
                   </span>
                 </th>
               ))}
