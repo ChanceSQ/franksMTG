@@ -5,7 +5,7 @@ import Table from "./components/Table";
 function App() {
   return (
     <div className="App">
-      <code>Frank MTG Cards</code>
+      <code>Franks MTG Cards</code>
       <Table />
     </div>
   );
