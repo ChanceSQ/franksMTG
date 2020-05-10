@@ -19,6 +19,14 @@ const Table = () => {
         Header: "Condition",
         accessor: "Condition",
       },
+      {
+        Header: "Foil",
+        accessor: "Foil",
+      },
+      {
+        Header: "Language",
+        accessor: "Language",
+      },
     ],
     []
   );
@@ -68,7 +76,7 @@ const Table = () => {
                       ? column.isSortedDesc
                         ? " 🔽"
                         : " 🔼"
-                      : "↕️"}
+                      : " ↕️"}
                   </span>
                 </th>
               ))}
