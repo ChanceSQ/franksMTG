@@ -58,11 +58,20 @@ const Table = () => {
     <>
       <input
         type="text"
+        placeholder="Search"
+        style={{
+          width: "40vw",
+          height: "25px",
+          textAlign: "center",
+        }}
         onChange={(event) => {
           filteredData(ogData, event.target.value);
         }}
       />
-      <table {...getTableProps()}>
+      <table
+        style={{ width: "100vw", overflow: "hidden" }}
+        {...getTableProps()}
+      >
         <thead>
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
