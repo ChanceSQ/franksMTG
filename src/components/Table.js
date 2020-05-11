@@ -69,7 +69,7 @@ const Table = () => {
         }}
       />
       <table
-        style={{ width: "100vw", overflow: "hidden" }}
+        style={{ width: "95vw", overflow: "hidden", alignSelf: "center" }}
         {...getTableProps()}
       >
         <thead>

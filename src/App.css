@@ -40,3 +40,9 @@
 tr:nth-child(2n) {
   background: aliceblue;
 }
+
+@media (max-width: 500px) {
+  .App {
+    font-size: 70%;
+  }
+}
